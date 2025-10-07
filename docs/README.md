@@ -1,4 +1,4 @@
-# [Nishul.dev](https://nishul.dev)
+# [thefarid.xyz](https://www.thefarid.xyz)
 
 > Developer portfolio built with Next.js 15, Tailwind CSS, and TypeScript.
 
@@ -12,6 +12,7 @@
 ## Getting Started
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/mdfarid01/Portfolio.git
 cd Portfolio

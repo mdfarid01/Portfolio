@@ -5,16 +5,16 @@ import Container from '@/components/common/Container'
 
 const educationData = [
   {
-    logo: '/About/tit.png',
-    institute: 'Technocrats Institute of Technology',
+    logo: '/About/rgpv.jpeg',
+    institute: 'Rajiv Gandhi Proudyogiki Vishwavidyalaya (R.G.P.V)',
     degree: 'B.Tech in Computer Science and Artificial Intelligence',
-    year: '2022 - 2026',
+    year: '2023 - 2027',
   },
   {
-    logo: '/About/school.jpeg',
-    institute: 'Sarvodaya Public School',
+    logo: '/About/school.png',
+    institute: 'Agrasen DAV Public School',
     degree: 'Higher Secondary',
-    year: '2018 - 2020',
+    year: '2020 - 2022',
   },
 ]
 

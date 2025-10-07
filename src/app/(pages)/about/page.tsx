@@ -7,22 +7,22 @@ import Info from "@/components/sections/about/info";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About - Nishul Dhakar",
+  title: "About - Md Farid",
   description:
-    "Explore more about Nishul Dhakar, including his education, certifications, and skills.",
+    "Explore more about Md Farid, including his education, certifications, and skills.",
   openGraph: {
-    title: "About - Nishul Dhakar",
+    title: "About - Md Farid",
     description:
-      "Explore more about Nishul Dhakar, including his education, certifications, and skills.",
-    url: "https://nishul.dev/about",
-    siteName: "Nishul Dhakar",
+      "Explore more about Md Farid, including his education, certifications, and skills.",
+  url: "https://www.thefarid.xyz/about",
+  siteName: "Md Farid",
     type: "website",
     images: [
       {
         url: "/amime.jpeg",
         width: 1200,
         height: 630,
-        alt: "About Nishul Dhakar",
+  alt: "About Md Farid",
       },
     ],
     locale: "en_US",

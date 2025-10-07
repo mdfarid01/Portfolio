@@ -75,7 +75,7 @@ export const projectsData: ProjectCardProps[] = [
 //   {
 //     title: "SmartEssay",
 //     icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//     href: "https://smartessay.nishul.dev/",
+//     href: "https://smartessay.mdfarid.dev/",
 //     progress: "Ongoing",
 //     description:
 //       "A minimalist Essay Practice App built for placement initiative. Real-time tracking, smart feedback, and gamified challenges to enhance logic, structure, and vocabulary while tracking progress.",
@@ -83,7 +83,7 @@ export const projectsData: ProjectCardProps[] = [
 //     links: [
 //       {
 //         type: "Source",
-//         href: "https://github.com/NishulDhakar/smartessay",
+//         href: "https://github.com/mdfarid01/smartessay",
 //         icon: <Icons.github className="size-3" />,
 //       },
 //     ],
@@ -99,7 +99,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "DropitHere",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://dropithere.nishul.dev/",
+//   href: "https://dropithere.mdfarid.dev/",
 //   progress: "Completed",
 //   description:
 //     "Created a platform to organize content like Twitter threads and YouTube videos into custom playlists, with shareable links for easy and structured dashboard sharing.",
@@ -107,7 +107,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/DropitHere",
+//       href: "https://github.com/mdfarid01/DropitHere",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -122,7 +122,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "Todo App",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://todo.nishul.dev/",
+//   href: "https://todo.mdfarid.dev/",
 //   progress: "Completed",
 //   description:
 //     "A full-stack Todo app for managing your daily tasks efficiently.",
@@ -130,7 +130,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/todo",
+//       href: "https://github.com/mdfarid01/todo",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -145,7 +145,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "Course selling",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://github.com/NishulDhakar/Course-selling-backend",
+//   href: "https://github.com/mdfarid01/Course-selling-backend",
 //   progress: "Completed",
 //   description:
 //     "Backend for a course selling platform with admin and user roles.",
@@ -153,7 +153,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/Course-selling-backend",
+//       href: "https://github.com/mdfarid01/Course-selling-backend",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -168,7 +168,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "QR Generator",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://qrgenerator.nishul.dev/",
+//   href: "https://qrgenerator.mdfarid.dev/",
 //   progress: "Completed",
 //   description:
 //     "Instantly generate QR codes for any link or text input.",
@@ -176,7 +176,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/qrgenerator",
+//       href: "https://github.com/mdfarid01/qrgenerator",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -191,7 +191,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "Restaurant Website",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://restaurant.nishul.dev/",
+//   href: "https://restaurant.mdfarid.dev/",
 //   progress: "Completed",
 //   description:
 //     "A modern responsive restaurant website landing page.",
@@ -199,7 +199,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/restaurant",
+//       href: "https://github.com/mdfarid01/restaurant",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -214,7 +214,7 @@ export const projectsData: ProjectCardProps[] = [
 // {
 //   title: "DrumKit",
 //   icon: <Icons.squareArrowOutUpRight className="size-4 gap-2" />,
-//   href: "https://drumkit.nishul.dev/",
+//   href: "https://drumkit.mdfarid.dev/",
 //   progress: "Completed",
 //   description:
 //     "Fun browser drum kit with keyboard sound interaction.",
@@ -222,7 +222,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/drumkit",
+//       href: "https://github.com/mdfarid01/drumkit",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],
@@ -245,7 +245,7 @@ export const projectsData: ProjectCardProps[] = [
 //   links: [
 //     {
 //       type: "Source",
-//       href: "https://github.com/NishulDhakar/tindog",
+//       href: "https://github.com/mdfarid01/tindog",
 //       icon: <Icons.github className="size-3" />,
 //     },
 //   ],

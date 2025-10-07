@@ -11,7 +11,7 @@ export default function HireMeButton() {
         href="https://drive.google.com/file/d/1cgHicVE543FVpvgZwYiO4CsiDTxMPIG3/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="View Nishul Dhakar's Resume">
+  aria-label="View Md Farid's Resume">
         <Button
           variant="outline"
           className="gap-2 px-4 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition text-sm font-medium text-black dark:text-white"

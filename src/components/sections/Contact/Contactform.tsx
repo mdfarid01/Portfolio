@@ -11,6 +11,7 @@ import { formSchema } from "@/lib/Schema"
 import z from "zod"
 import { send } from "@/lib/email"
 import { Loader2, Send } from "lucide-react"
+import { useState } from "react"
 
 const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -19,14 +20,19 @@ const ContactForm = () => {
   })
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setStatus(null)
     try {
       await send(values)
-      await new Promise(res => setTimeout(res, 2000))
+      setStatus({ type: "success", text: "Message sent — I will reply soon." })
+      await new Promise(res => setTimeout(res, 1200))
       form.reset()
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error sending message:", error)
+      setStatus({ type: "error", text: error?.message || "Failed to send message" })
     }
   }
+
+  const [status, setStatus] = useState<null | { type: "success" | "error"; text: string }>(null)
 
   return (
     <Card className="border-none shadow-none bg-transparent">
@@ -118,6 +124,12 @@ const ContactForm = () => {
                 </>
               )}
             </Button>
+
+            {status ? (
+              <p className={`mt-2 text-sm ${status.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                {status.text}
+              </p>
+            ) : null}
           </form>
         </Form>
       </CardContent>

@@ -52,13 +52,15 @@ export default function CertificateCard({
       />
 
       <div
-        className="rounded-lgoverflow-hidden mb-4 cursor-pointer relative group"
+        className="rounded-lg overflow-hidden mb-4 cursor-pointer relative group"
         onClick={openModal}>
         {!imageError ? (
           <Image
             src={image}
             alt={title}
             onError={handleImageError}
+            width={600}
+            height={400}
             className="w-full h-full object-cover rounded-lg border"
           />
         ) : (
@@ -94,6 +96,8 @@ export default function CertificateCard({
         <Image
           src={image}
           alt="Fullscreen certificate"
+          width={1600}
+          height={1000}
           className="object-contain max-w-full max-h-full rounded-lg cursor-pointer"
           onClick={closeModal}
         />

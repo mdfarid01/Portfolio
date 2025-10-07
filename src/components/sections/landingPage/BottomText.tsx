@@ -6,7 +6,7 @@
 //   return (
 
 //     <div className="h-full flex items-center justify-center">
-//       <TextHoverEffect text="NISHUL" />
+//       <TextHoverEffect text="Md Farid" />
 //     </div>
 //   );
 // }

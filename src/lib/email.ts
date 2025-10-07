@@ -5,13 +5,22 @@ import { formSchema } from "./Schema"
 import { Resend } from "resend"
 import { EmailTemplate } from "@/components/sections/Contact/email-tamplate"
 
-const resend = new Resend(process.env.RESEND_API_KEY || "")
+
+
+// recipients can be configured via RESEND_TO (comma-separated list)
+const getRecipients = () => {
+  const env = process.env.RESEND_TO
+  if (!env) return ["mdfarid.0118@gmail.com"]
+  return env.split(",").map(e => e.trim()).filter(Boolean)
+}
 
 export const send = async (emailFormData: z.infer<typeof formSchema>) => {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY || "")
+    const fromAddress = "noreply@resend.dev"
     const { data, error } = await resend.emails.send({
-  from: `Md Farid <${process.env.RESEND_FORM_EMAIL}>`, 
-  to: ["mdfarid.0118@gmail.com"], 
+      from: fromAddress,
+      to: getRecipients(),
       subject: `New Contact Form Submission from ${emailFormData.fullName}`,
       replyTo: emailFormData.email,
       react: EmailTemplate({
@@ -23,11 +32,12 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
     })
 
     if (error) {
-      return { success: false, error }
+      console.error("Resend API error:", error)
+      throw new Error(typeof error === "string" ? error : JSON.stringify(error))
     }
     return { success: true, data }
   } catch (err) {
-    console.error("Email send failed:", err);
-    return { success: false, error: "Unexpected server error" }
+    console.error("Email send failed:", err)
+    throw err
   }
 }
