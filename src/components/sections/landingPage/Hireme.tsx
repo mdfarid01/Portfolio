@@ -8,7 +8,7 @@ export default function HireMeButton() {
   return (
     <div className="fixed top-4 right-4 z-50 hidden md:block">
       <Link
-        href="https://drive.google.com/file/d/1cgHicVE543FVpvgZwYiO4CsiDTxMPIG3/view?usp=sharing"
+        href="https://drive.google.com/file/d/10flZf-1sP77mKzze8I6bQsFfQYa19V8Y/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
   aria-label="View Md Farid's Resume">
