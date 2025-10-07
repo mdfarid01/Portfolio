@@ -5,7 +5,6 @@ import React, {
   ComponentPropsWithoutRef,
   useEffect,
   useRef,
-  useState,
 } from "react";
 
 interface ParticlesProps extends ComponentPropsWithoutRef<"div"> {

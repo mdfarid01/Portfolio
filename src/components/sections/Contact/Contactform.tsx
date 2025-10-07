@@ -26,10 +26,11 @@ const ContactForm = () => {
       setStatus({ type: "success", text: "Message sent — I will reply soon." })
       await new Promise(res => setTimeout(res, 1200))
       form.reset()
-    } catch (error: any) {
-      console.error("Error sending message:", error)
-      setStatus({ type: "error", text: error?.message || "Failed to send message" })
-    }
+    } catch (error: unknown) {
+        console.error("Error sending message:", error)
+        const message = error instanceof Error ? error.message : String(error) || "Failed to send message"
+        setStatus({ type: "error", text: message })
+      }
   }
 
   const [status, setStatus] = useState<null | { type: "success" | "error"; text: string }>(null)

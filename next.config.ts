@@ -2,7 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["www.thefarid.xyz"],
+    // use remotePatterns to avoid the `images.domains` deprecation warning
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.thefarid.xyz",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
