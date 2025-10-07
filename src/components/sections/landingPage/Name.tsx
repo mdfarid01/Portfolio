@@ -8,13 +8,29 @@ export default function Name() {
     <>
       <div className="mb-10 flex flex-col items-start gap-10 lg:flex-row lg:items-center">
         <div className="relative transition-transform duration-300 ease-in-out hover:scale-105">
+          {/* Fallback image for small screens */}
           <Image
             src="/mdfarid.jpg"
             alt="Md Farid"
             width={100}
             height={100}
-            className="rounded-2xl shadow-sm ring-1 ring-gray-100 dark:ring-gray-800"
+            className="rounded-2xl shadow-sm ring-1 ring-gray-100 dark:ring-gray-800 md:hidden"
           />
+
+          {/* Decorative autoplaying video on md+ screens */}
+          <video
+            src="/IMG_9901.mp4"
+            poster="/placeholder.png"
+            width={100}
+            height={100}
+            className="hidden md:block rounded-2xl shadow-sm ring-1 ring-gray-100 dark:ring-gray-800 object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Animated background video"
+          />
+
           <span className="border-primary absolute -right-1 -bottom-1 h-4 w-4 rounded-full border-2 bg-green-500" />
         </div>
         <div className="flex-1">
