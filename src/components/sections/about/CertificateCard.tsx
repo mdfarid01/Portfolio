@@ -31,7 +31,7 @@ export default function CertificateCard({
   const closeModal = () => setIsOpen(false);
 
   const handleImageError = () => {
-    console.error(`Failed to load image: ${image}`);
+    // Silently use the placeholder image when original fails
     setImageError(true);
   };
 
@@ -54,20 +54,14 @@ export default function CertificateCard({
       <div
         className="rounded-lg overflow-hidden mb-4 cursor-pointer relative group"
         onClick={openModal}>
-        {!imageError ? (
-          <Image
-            src={image}
-            alt={title}
-            onError={handleImageError}
-            width={600}
-            height={400}
-            className="w-full h-full object-cover rounded-lg border"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-red-500 bg-gray-100 rounded border border-dashed border-red-400">
-            Image failed to load
-          </div>
-        )}
+        <Image
+          src={imageError ? "/placeholder.png" : image}
+          alt={title}
+          onError={handleImageError}
+          width={600}
+          height={400}
+          className="w-full h-full object-cover rounded-lg border"
+        />
       </div>
 
       <Modal
@@ -94,7 +88,7 @@ export default function CertificateCard({
           },
         }} >
         <Image
-          src={image}
+          src={imageError ? "/placeholder.png" : image}
           alt="Fullscreen certificate"
           width={1600}
           height={1000}
