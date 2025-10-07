@@ -16,7 +16,12 @@ const getRecipients = () => {
 
 export const send = async (emailFormData: z.infer<typeof formSchema>) => {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY || "")
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is missing. Set RESEND_API_KEY in your environment variables.")
+      throw new Error("Mail service not configured")
+    }
+    const resend = new Resend(apiKey)
     const fromAddress = "noreply@resend.dev"
     const { data, error } = await resend.emails.send({
       from: fromAddress,
