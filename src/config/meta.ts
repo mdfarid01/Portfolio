@@ -14,9 +14,9 @@ export const siteConfig = {
   ogImage: '/meta/opengraph-image.png',
   author: {
   name: "Md Farid",
-  twitter: '@mdfarid',
+  twitter: '@MdFarid7886',
   github: 'mdfarid01',
-  linkedin: 'mdfarid',
+  linkedin: 'md-farid-1aa563291',
   email: 'mdfarid.0118@gmail.com',
   },
   keywords: [
