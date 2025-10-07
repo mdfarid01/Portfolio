@@ -4,15 +4,15 @@ import { BsTwitterX } from "react-icons/bs";
 
 export const socialLinks = {
   Twitter: {
-    href: "https://twitter.com/mdfarid",
+    href: "https://x.com/MdFarid7886",
     icon: BsTwitterX,
   },
   GitHub: {
-    href: "https://github.com/mdfarid",
+    href: "https://github.com/mdfarid01",
     icon: FiGithub,
   },
   LinkedIn: {
-    href: "https://linkedin.com/in/mdfarid",
+    href: "https://www.linkedin.com/in/md-farid-1aa563291/",
     icon: FaLinkedinIn,
   },
   Portfolio: {

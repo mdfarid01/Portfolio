@@ -26,15 +26,15 @@ const Reachout = () => {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-3">
-        {/* <Link
-          href="https://x.com/intent/follow?screen_name=mdfarid"
+        <a
+          href="https://x.com/MdFarid7886"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button variant={"outline"} className="flex items-center gap-2">
-            Twitter
+            X
           </Button>
-        </Link> */}
+        </a>
 
         <a
           href="https://wa.me/918825222849?text=Hello%20Md%20Farid%2C%20I%20am%20interested%20in%20your%20work"

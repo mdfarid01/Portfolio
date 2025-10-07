@@ -12,6 +12,7 @@ export type Site = {
   links: {
     x: string;
     github: string;
+    linkedin?: string;
   }
 }
 

@@ -38,7 +38,8 @@ export const siteConfig: Site = {
     url: "https://www.thefarid.xyz",
   },
   links: {
-    x: "https://x.com/mdfarid",
+    x: "https://x.com/MdFarid7886",
     github: "https://github.com/mdfarid01",
+    linkedin: "https://www.linkedin.com/in/md-farid-1aa563291/",
   },
 };
