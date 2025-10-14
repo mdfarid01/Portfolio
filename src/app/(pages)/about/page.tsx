@@ -1,7 +1,8 @@
 import Container from "@/components/common/Container";
 import { Reveal } from "@/components/common/reveal";
 
-import CertificatesSection from "@/components/sections/about/Certificate";
+// CertificatesSection is temporarily disabled per request
+// import CertificatesSection from "@/components/sections/about/Certificate";
 import Education from "@/components/sections/about/Education";
 import Info from "@/components/sections/about/info";
 import type { Metadata } from "next";
@@ -41,7 +42,9 @@ export default function AboutPage() {
       </Reveal>
       <Reveal>
         {" "}
-        <CertificatesSection />
+  {/* Certificates section commented out temporarily
+  <CertificatesSection />
+  */}
       </Reveal>
       {/* <LeetCodeDSAVisuals /> */}
     </Container>
