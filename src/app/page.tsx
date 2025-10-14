@@ -14,13 +14,18 @@ import Reachout from "@/components/sections/landingPage/Reachout";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/common/reveal";
 import Experience from "@/components/sections/landingPage/Experirnce";
+import { getPublishedBlogPosts } from '@/lib/blog';
+import { BlogList } from '@/components/blog/BlogList';
 // import { experience } from "@/data/experience";
 // import TextHoverEffectDemo from "@/components/sections/landingPage/BottomText";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const allPosts = getPublishedBlogPosts();
+  const latestTwo = allPosts.slice(0, 2);
+
   return (
     <div>
-    
+
       <div className="flex min-h-screen items-start justify-start">
         <Container className="min-h-full p-4 md:pt-20 md:pb-10">
           <Reveal>
@@ -61,6 +66,19 @@ export default function HomePage() {
               titleClassName="text-2xl font-semibold text-gray-900 dark:text-white"
             />{" "}
           </Reveal>
+          {latestTwo.length > 0 && (
+            <Reveal>
+              <div className="mt-8">
+                <h2 className="text-2xl ml-10 font-bold">Latest Posts</h2>
+                <div className="mx-auto px-8 max-w-4xl py-8">
+                  <BlogList posts={latestTwo} />
+                </div>
+                <div className="ml-10">
+                  <Link href="/blog" className="underline font-medium">View all blogs</Link>
+                </div>
+              </div>
+            </Reveal>
+          )}
           <Reveal>
             <Link
               href="/projects"
