@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
+type IconsType = string | Metadata['icons'];
+
 export function createMetadata({
   title = siteConfig.name,
   description = siteConfig.description,
   image = siteConfig.ogImage,
-  icons = siteConfig.icons,
+  icons = siteConfig.icons as IconsType,
 }: {
   title?: string;
   description?: string;
   image?: string;
-  icons?: string;
+  icons?: IconsType;
 } = {}): Metadata {
   return {
     metadataBase: new URL(siteConfig.url),
@@ -38,6 +40,6 @@ export function createMetadata({
       description,
       images: [image ?? siteConfig.ogImage],
     },
-    icons,
+    icons: icons as Metadata['icons'],
   };
 }
