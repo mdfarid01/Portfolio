@@ -15,13 +15,14 @@ interface ProjectsPageProps {
   showFilter?: boolean; 
 }
 
-export default function ProjectsPage({
-  containerClassName = "mx-auto px-6 lg:px-12 max-w-3xl mt-20 py-4",
-  gridClassName = "grid md:grid-cols-2 lg:grid-cols-2 gap-8 py-12",
-  titleClassName = "text-4xl font-bold tracking-tight lg:text-5xl text-center",
-  limit,
-  showFilter = true,
-}: ProjectsPageProps) {
+export default function ProjectsPage(props: Partial<ProjectsPageProps>) {
+  const {
+    containerClassName = "mx-auto px-6 lg:px-12 max-w-3xl mt-20 py-4",
+    gridClassName = "grid md:grid-cols-2 lg:grid-cols-2 gap-8 py-12",
+    titleClassName = "text-4xl font-bold tracking-tight lg:text-5xl text-center",
+    limit,
+    showFilter = true,
+  } = props;
   const [filter, setFilter] = useState("All");
 
   const displayedProjects = (limit

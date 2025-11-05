@@ -13,15 +13,17 @@ import Github from "@/components/sections/landingPage/Github";
 import Reachout from "@/components/sections/landingPage/Reachout";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/common/reveal";
-import Experience from "@/components/sections/landingPage/Experirnce";
-import { getPublishedBlogPosts } from '@/lib/blog';
-import { BlogList } from '@/components/blog/BlogList';
+// Experience temporarily disabled per request
+// import Experience from "@/components/sections/landingPage/Experirnce";
+// Blog preview temporarily disabled
+// import { getPublishedBlogPosts } from '@/lib/blog';
+// import { BlogList } from '@/components/blog/BlogList';
 // import { experience } from "@/data/experience";
 // import TextHoverEffectDemo from "@/components/sections/landingPage/BottomText";
 
 export default async function HomePage() {
-  const allPosts = getPublishedBlogPosts();
-  const latestTwo = allPosts.slice(0, 2);
+  // const allPosts = getPublishedBlogPosts();
+  // const latestTwo = allPosts.slice(0, 2);
 
   return (
     <div>
@@ -39,12 +41,11 @@ export default async function HomePage() {
             </div>
           </Reveal> */}
 
-                  <Reveal>
-
-                  <Experience />
-
-
-                  </Reveal>
+          {/*
+            <Reveal>
+              <Experience />
+            </Reveal>
+          */}
 
 
           <Reveal>
@@ -66,6 +67,7 @@ export default async function HomePage() {
               titleClassName="text-2xl font-semibold text-gray-900 dark:text-white"
             />{" "}
           </Reveal>
+          {/* Latest posts temporarily disabled
           {latestTwo.length > 0 && (
             <Reveal>
               <div className="mt-8">
@@ -79,6 +81,7 @@ export default async function HomePage() {
               </div>
             </Reveal>
           )}
+          */}
           <Reveal>
             <Link
               href="/projects"
