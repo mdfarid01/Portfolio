@@ -9,6 +9,7 @@ import ProjectsList from "@/components/sections/Projects/ProjectsPage";
 import Link from "next/link";
 import { FaArrowCircleRight, FaArrowRight } from "react-icons/fa";
 import Github from "@/components/sections/landingPage/Github";
+import JourneyPreview from "@/components/sections/journey/JourneyPreview";
 
 import Reachout from "@/components/sections/landingPage/Reachout";
 import { Button } from "@/components/ui/button";
@@ -51,6 +52,10 @@ export default async function HomePage() {
           <Reveal>
             {" "}
             <TechSkills />
+          </Reveal>
+
+          <Reveal>
+            <JourneyPreview />
           </Reveal>
 
           <Github />
