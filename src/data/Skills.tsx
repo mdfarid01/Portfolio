@@ -30,7 +30,6 @@ export const techSkills: Skill[] = [
   { name: "Java", icon: FaJava, color: "text-orange-600", variant: "secondary", category: "language" },
     { name: "JavaScript", icon: FaJs, color: "text-yellow-500", variant: "secondary", category: "language" },
   { name: "TypeScript", icon: BiLogoTypescript, color: "text-blue-600", variant: "secondary", category: "language" },
-  { name: "Php", icon: FaPhp, color: "text-purple-600", variant: "secondary", category: "language" },
   { name: "Dart", icon: FaDartLang, color: "text-blue-600", variant: "secondary", category: "language" },
 
 // 🌐 Web
@@ -38,7 +37,6 @@ export const techSkills: Skill[] = [
 { name: "CSS", icon: PiFileCssFill, color: "text-blue-500", variant: "ghost", category: "web", size: "w-6 h-6" },
 { name: "Bootstrap", icon: FaBootstrap, color: "text-purple-600", variant: "ghost", category: "web", size: "w-6 h-6" },
 { name: "Tailwind", icon: RiTailwindCssFill, color: "text-cyan-600", variant: "ghost", category: "web", size: "w-6 h-6" },
-{ name: "Framer Motion", icon: TbBrandFramerMotion, color: "text-purple-600", variant: "ghost", category: "web", size: "w-6 h-6" },
 
 { name: "React", icon: FaReact, color: "text-cyan-500", variant: "ghost", category: "web", size: "w-6 h-6" },
 { name: "Next.js", icon: RiNextjsFill, color: "text-gray-900 dark:text-white", variant: "ghost", category: "web", size: "w-6 h-6" },
