@@ -1,7 +1,7 @@
-import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaJava, FaJs, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { PiFileCssFill } from "react-icons/pi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandFramerMotion } from "react-icons/tb";
+// Framer Motion icon removed (not used)
 import {  SiExpress,  SiGithubactions,  SiKubernetes, SiMongodb, SiMysql,  SiPostgresql, SiSocketdotio } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaDocker } from "react-icons/fa";
