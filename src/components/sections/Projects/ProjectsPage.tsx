@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Container from "@/components/common/Container";
 import ProjectCard from "@/components/sections/Projects/ProjectCard";
 import { projectsData } from "@/data/Projects";
@@ -25,9 +25,12 @@ export default function ProjectsList(props: Partial<ProjectsPageProps>) {
   } = props;
   const [filter, setFilter] = useState("All");
 
-  const displayedProjects = (limit ? projectsData.slice(0, limit) : projectsData).filter((project) => filter === "All" || project.type === filter);
+  const types = useMemo(() => {
+    const unique = Array.from(new Set(projectsData.map((p) => p.type || "Other")));
+    return ["All", ...unique];
+  }, []);
 
-  const types = ["All", "Web", "Mobile"];
+  const displayedProjects = (limit ? projectsData.slice(0, limit) : projectsData).filter((project) => filter === "All" || (project.type || "") === filter);
 
   return (
     <Container className={containerClassName}>
