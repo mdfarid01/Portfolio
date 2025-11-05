@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { PointerHighlight } from "../../ui/pointer-highlight";
+import Typewriter from "@/components/common/Typewriter";
 import { useEffect, useRef, useState } from "react";
 
 export default function Name() {
@@ -45,7 +46,7 @@ export default function Name() {
 
   return (
     <>
-      <div className="mb-10 flex flex-col items-start gap-10 lg:flex-row lg:items-center">
+  <div id="hero-name" className="mb-10 flex flex-col items-start gap-10 lg:flex-row lg:items-center">
         <div className="relative w-[100px] h-[100px] transition-transform duration-300 ease-in-out hover:scale-105">
           {/* Image fallback (visible until video plays) */}
           <Image
@@ -95,7 +96,16 @@ export default function Name() {
             rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600"
             pointerClassName="text-yellow-500"
           >
-            <span className="relative z-10">Software Developer</span>
+            <span className="relative z-10">
+              <Typewriter
+                words={[
+                  "Software Developer",
+                  "Frontend Engineer",
+                  "React Developer",
+                  "Open Source Contributor",
+                ]}
+              />
+            </span>
           </PointerHighlight>
 
           <p className="text-secondary mt-2 text-sm">Bhopal, India</p>

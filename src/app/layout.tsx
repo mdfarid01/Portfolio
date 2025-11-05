@@ -8,8 +8,10 @@ import { createMetadata } from "@/lib/createMetadata";
 import Footer from "@/components/layout/Footer";
 import { Reveal } from "@/components/common/reveal";
 import { ThemeProvider } from "next-themes";
+import React from "react";
 import HireMeButton from "@/components/sections/landingPage/Hireme";
 import EasterEgg from "@/components/common/EasterEgg";
+import TourBadge from "@/components/common/TourBadge";
 
 export const metadata = createMetadata({
   description:
@@ -51,6 +53,8 @@ export default function RootLayout({
           </Reveal>
           {/* Hidden easter-egg component (console art + secret mini-game). No visible changes by default. */}
           <EasterEgg />
+          {/* Explore badge + tour (small visible CTA) */}
+          <TourBadge />
         </ThemeProvider>
       </body>
     </html>

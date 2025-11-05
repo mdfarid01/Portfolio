@@ -1,10 +1,28 @@
 "use client";
 
+import React from "react";
 import { Briefcase, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function HireMeButton() {
+  const [pulse, setPulse] = React.useState(false);
+
+  React.useEffect(() => {
+    try {
+      const seen = sessionStorage.getItem("hiremePulsed");
+      if (!seen) {
+        setPulse(true);
+        setTimeout(() => {
+          setPulse(false);
+          sessionStorage.setItem("hiremePulsed", "1");
+        }, 3500);
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }, []);
+
   return (
     <div className="fixed top-4 right-4 z-50 hidden md:block">
       <Link
@@ -14,7 +32,7 @@ export default function HireMeButton() {
   aria-label="View Md Farid's Resume">
         <Button
           variant="outline"
-          className="gap-2 px-4 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition text-sm font-medium text-black dark:text-white"
+          className={`gap-2 px-4 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition text-sm font-medium text-black dark:text-white ${pulse ? "animate-pulse" : ""}`}
         >
           <Briefcase className="w-4 h-4 stroke-black dark:stroke-white" />
           <span>Hire Me</span>
