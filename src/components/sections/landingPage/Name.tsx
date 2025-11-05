@@ -9,6 +9,8 @@ export default function Name() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [needsPlay, setNeedsPlay] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [greeting, setGreeting] = useState<string | null>(null);
+  const [waveAnimate, setWaveAnimate] = useState(false);
 
   // Try to autoplay on mount. If autoplay is blocked (Safari/iOS), show play overlay.
   useEffect(() => {
@@ -29,6 +31,30 @@ export default function Name() {
     };
 
     tryPlay();
+  }, []);
+
+  // Personalized greeting (fixed) and a small wave animation that runs once per session.
+  useEffect(() => {
+    try {
+      setGreeting("Hello");
+
+      const sessionKey = "greetingSeenV1";
+      const seen = typeof window !== "undefined" && sessionStorage.getItem(sessionKey);
+      // animate the wave only if not seen in this session
+      if (!seen) {
+        setWaveAnimate(true);
+        const t = window.setTimeout(() => {
+          setWaveAnimate(false);
+          try {
+            sessionStorage.setItem(sessionKey, "1");
+          } catch {}
+        }, 1500);
+
+        return () => clearTimeout(t);
+      }
+    } catch {
+      // ignore any sessionStorage/time errors
+    }
   }, []);
 
   const handleUserPlay = async () => {
@@ -88,6 +114,14 @@ export default function Name() {
         </div>
 
         <div className="flex-1">
+          {greeting && (
+            <p className="mb-2 text-sm text-secondary">
+              <span className="mr-2">{greeting},</span>
+              <span className={waveAnimate ? "wave-animate inline-block" : "inline-block"} role="img" aria-label="waving hand">
+                👋
+              </span>
+            </p>
+          )}
           <h1 className="mb-4 text-4xl font-bold tracking-tighter md:text-5xl lg:text-5xl">
             Md Farid
           </h1>

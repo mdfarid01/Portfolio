@@ -3,7 +3,7 @@ import About from "@/components/sections/landingPage/About";
 import Container from "@/components/common/Container";
 
 // import ContactForm from "@/components/landingPage/Contact";
-import ProjectsPage from "./(pages)/projects/page";
+import ProjectsList from "@/components/sections/Projects/ProjectsPage";
 // import { ParticlesDemo } from "@/components/common/Particlesbg";
 // import { ShinyButton } from "@/components/ui/magicui/shiny-button";
 import Link from "next/link";
@@ -59,7 +59,7 @@ export default async function HomePage() {
                     <h2 id="projects-heading" className="text-2xl ml-10 font-bold"> 
                           Projects.
                         </h2>
-            <ProjectsPage
+            <ProjectsList
               showFilter={false}
               limit={2}
               containerClassName="mx-auto px-8 max-w-4xl "

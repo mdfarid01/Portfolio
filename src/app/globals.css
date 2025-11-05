@@ -249,3 +249,19 @@ html {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Small wave emoji animation used in the hero greeting. Runs a short one-off wave. */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+.wave-animate {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 1.4s ease-in-out both;
+}
+
