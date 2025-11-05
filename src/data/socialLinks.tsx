@@ -16,7 +16,7 @@ export const socialLinks = {
     icon: FaLinkedinIn,
   },
   Portfolio: {
-    href: "https://your-portfolio-url.com",
+    href: "https://www.thefarid.xyz/",
     icon: FiGithub,
   },
 };
