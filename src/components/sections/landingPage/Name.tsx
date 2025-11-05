@@ -73,13 +73,13 @@ export default function Name() {
   return (
     <>
   <div id="hero-name" className="mb-10 flex flex-col items-start gap-10 lg:flex-row lg:items-center">
-        <div className="relative w-[100px] h-[100px] transition-transform duration-300 ease-in-out hover:scale-105">
+        <div className="relative w-[120px] h-[120px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] transition-transform duration-300 ease-in-out hover:scale-105">
           {/* Image fallback (visible until video plays) */}
           <Image
             src="/mdfarid.jpg"
             alt="Md Farid"
-            width={100}
-            height={100}
+            width={160}
+            height={160}
             className={`rounded-2xl shadow-sm ring-1 ring-gray-100 dark:ring-gray-800 object-cover ${isPlaying ? "opacity-0" : "opacity-100"}`}
           />
 
