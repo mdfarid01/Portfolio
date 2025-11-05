@@ -9,6 +9,7 @@ import Footer from "@/components/layout/Footer";
 import { Reveal } from "@/components/common/reveal";
 import { ThemeProvider } from "next-themes";
 import HireMeButton from "@/components/sections/landingPage/Hireme";
+import EasterEgg from "@/components/common/EasterEgg";
 
 export const metadata = createMetadata({
   description:
@@ -48,6 +49,8 @@ export default function RootLayout({
           <Reveal>
             <Footer />
           </Reveal>
+          {/* Hidden easter-egg component (console art + secret mini-game). No visible changes by default. */}
+          <EasterEgg />
         </ThemeProvider>
       </body>
     </html>
