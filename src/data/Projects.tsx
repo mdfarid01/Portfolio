@@ -8,7 +8,7 @@ export const projectsData: ProjectCardProps[] = [
     description:
       "Site-Builder is an AI-powered website builder that lets users generate complete websites using artificial intelligence with a credit-based usage system.",
     status: "running",
-  image: "sitebuilder.png",
+  image: "/Projects/sitebuilder.png",
     technologies: ["React", "Node.js", "Solidity", "Ethereum"],
     type: "AI",
   },
