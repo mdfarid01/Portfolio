@@ -2,15 +2,15 @@ import { ProjectCardProps } from "@/components/sections/Projects/ProjectCard";
 
 export const projectsData: ProjectCardProps[] = [
   {
-    title: "Movie Ticket NFT System",
-    href: "#",
-    github: "#",
+    title: "AI SITE BUILDER",
+    href: "https://sitebuilder.thefarid.xyz/",
+    github: "https://github.com/mdfarid01/Site-Builder",
     description:
-      "A Web3-powered ticket booking system where users can book movie tickets using crypto wallets like MetaMask and Bitget. After payment, each ticket is generated as a unique NFT to prevent fraud or duplication.",
+      "Site-Builder is an AI-powered website builder that lets users generate complete websites using artificial intelligence with a credit-based usage system.",
     status: "running",
-  image: "/Projects/movie-nft.svg",
+  image: "/Users/test/Desktop/Portfolio/src/data/project img/ai site builder.png",
     technologies: ["React", "Node.js", "Solidity", "Ethereum"],
-    type: "Web3",
+    type: "AI",
   },
   {
     title: "Web3 Coffee Shop",
