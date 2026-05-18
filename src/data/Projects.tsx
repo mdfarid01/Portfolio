@@ -24,6 +24,17 @@ export const projectsData: ProjectCardProps[] = [
     type: "AI",
   },
   {
+    title: "AI-WALLET-ASSISTANT",
+    href: "https://ai-wallet-assistant.thefarid.xyz",
+    github: "https://github.com/mdfarid01/AI-WALLET-ASSISTANT",
+    description:
+      "AI Wallet Assistant is a smart Web3-powered financial companion that helps users manage crypto wallets, track balances, monitor transactions, and get AI-driven insights for better digital asset management.",
+    status: "running",
+    image: "/Projects/ai-wallet-assistant.png",
+    technologies: ["TypeScript", "JavaScript", "CSS", "Ethers.js", "Web3.js"],
+    type: "Web3",
+  },
+  {
     title: "Web3 Coffee Shop",
     href: "#",
     github: "#",
