@@ -24,6 +24,17 @@ export const projectsData: ProjectCardProps[] = [
     type: "AI",
   },
   {
+    title: "Live Chat App",
+    href: "https://live-chat.thefarid.xyz",
+    github: "https://github.com/mdfarid01/Live-Chat",
+    description:
+      "Live Chat is a real-time messaging platform that enables seamless and instant communication between users with a modern and responsive interface.",
+    status: "running",
+    image: "/Projects/live-chat-app.png",
+    technologies: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB", "JWT"],
+    type: "Others",
+  },
+  {
     title: "AI-WALLET-ASSISTANT",
     href: "https://ai-wallet-assistant.thefarid.xyz",
     github: "https://github.com/mdfarid01/AI-WALLET-ASSISTANT",
