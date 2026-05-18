@@ -2,6 +2,17 @@ import { ProjectCardProps } from "@/components/sections/Projects/ProjectCard";
 
 export const projectsData: ProjectCardProps[] = [
   {
+    title: "Offline UPI",
+    href: "https://upi-offline-mesh-fb0a.onrender.com",
+    github: "https://github.com/mdfarid01/UPI-OFFLINE",
+    description:
+      "An interactive Spring Boot demo that shows how a UPI-style payment could be created offline, carried through nearby phones, and settled later when a bridge node comes online.",
+    status: "running",
+    image: "/Projects/upi-offline.png",
+    technologies: ["Java", "HTML", "Docker"],
+    type: "Others",
+  },
+  {
     title: "AI SITE BUILDER",
     href: "https://sitebuilder.thefarid.xyz/",
     github: "https://github.com/mdfarid01/Site-Builder",
