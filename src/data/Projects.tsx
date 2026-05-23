@@ -46,6 +46,17 @@ export const projectsData: ProjectCardProps[] = [
     type: "Web3",
   },
   {
+    title: "Rapid Track",
+    href: "https://rapidtrack.thefarid.xyz",
+    github: "https://github.com/mdfarid01/RapidTrack1",
+    description:
+      "RapidTrack is a modern real-time tracking and management platform designed to streamline task monitoring, progress tracking, and workflow organization with a fast and user-friendly interface. It offers efficient data handling, responsive design, and seamless performance to help users manage activities and track updates in real time.",
+    status: "running",
+    image: "/Projects/rapid-track.png",
+    technologies: ["React.js", "Vite", "Tailwind CSS", "JavaScript", "TypeScript", "Node.js", "Vercel"],
+    type: "Others",
+  },
+  {
     title: "Web3 Coffee Shop",
     href: "#",
     github: "#",
